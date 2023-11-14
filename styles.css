@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+
+body {
+    height: 100vh;
+    background: url(./images/pattern-circles.svg) center calc(57px), url(./images/bg-pattern.svg);
+    background-repeat: no-repeat;
+    width: auto;
+    padding: 89px 32px 88px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: #293356;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.sign-up,
+.sign-up-web{
+    color: #848EAD;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 23px;
+    width: 326px;
+    margin-top: 8px;
+}
+
+.sign-up-web{
+    display: none;
+}
+
+.main-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    width: 327px;
+    margin-top: 64px;
+    background: white;
+    box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.15);
+    padding-top: 34px;
+    padding-bottom: 32px;
+}
+
+.numbers{
+  display: flex;
+  flex-direction: column;
+  gap: 89px;
+}
+
+#pageviewsDisplay{
+    color: #848EAD;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.714px;
+}
+
+#priceDisplay{
+    color: #293356;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -0.8px; 
+    padding-top: 89px;
+}
+
+.month{
+    color: #848EAD;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* range input */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 279px;
+  height: 8px;
+  margin-top: -81px;
+  margin-bottom: 118px;
+  background: linear-gradient(90deg, #A4F3EB 50%, #ECF0FB 0%);
+  cursor: pointer;
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #A4F3EB;
+  background-image: url(./images/icon-slider.svg);
+  background-size:;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover{
+  background-color: #24AEA1
+}
+
+
+
+/* toggle switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 43px;
+    height: 22px;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+
+  .slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 17px;
+    top: 2px;
+    left: 3px;
+    right: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #7AEADF;
+  }
+  
+  input:not(:checked) + .slider {
+    background-color: #CFD8EF;
+}
+
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(17px);
+    -ms-transform: translateX(17px);
+    transform: translateX(17px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+  .billing{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 38px;
+  }
+
+  .monthly-billing,
+  .yearly-billing{
+    color: #848EAD;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .discount,
+  .discount-web{
+    display: flex;
+    width: auto;
+    height: 19px;
+    border-radius: 9.5px;
+    background: #FEEDE8;
+    color: #FF8D68;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 800;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 8px 3px;
+  }
+
+  .discount-web{
+    display: none;
+  }
+
+  .line{
+    width: 327px;
+    height: 1px;
+    background: #ECF0FB;
+  }
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+}
+
+  .perks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 11px;
+    margin-top: 24px;
+  }
+
+  .perks img{
+    width: 6.949px;
+    height: 5.042px;
+  }
+
+  .unlimited,
+  .ownership,
+  .reports{
+    display: flex;
+    align-items: center;
+    gap: 16.05px;
+  }
+
+  .unlWeb,
+  .owner,
+  .eReport{
+    color: #848EAD;
+    font-family: Manrope;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+
+  .trial{
+    margin-top: 33px;
+    width: 170px;
+    height: 41px;
+    border-radius: 20.5px;
+    background: #293356;
+    border: none;
+    color: #BECDFF;
+    font-size: 12px;
+    font-weight: 800;
+  }
+
+
+@media (min-width:1440px) {
+    body {
+        padding: 104px 450px 137px;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+
+    .sign-up-web{
+        display: block;
+        margin-top: 12px;
+        font-size: 15px;
+        width: auto;
+    }
+
+    .sign-up{
+        display: none;
+    }
+
+    .main-card{
+        width: 540px;
+        height: auto;
+        margin-top: 92px;
+        padding-top: 40px;
+        padding-bottom: 33px;
+    }
+
+    .numbers{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #pageviewsDisplay{
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+    
+    #priceDisplay{
+        font-size: 40px;
+        letter-spacing: -1px;
+        padding: 0;
+        align-items: center;
+    }
+    
+    .month{
+        font-size: 16px;
+    }
+
+
+    #priceRange{
+        margin-top: 40px;
+        margin-bottom: 0px;
+        width: 444px;
+    }
+
+    .billing{
+        margin-top: 56px;
+        margin-left: 104px;
+        gap: 16px;
+        margin-bottom: 40px;
+     }
+
+     .discount{
+        display: none;
+     }
+
+     .discount-web{
+        display: block;
+     }
+
+      .line{
+        width: 540px
+      }
+
+    .bottom{
+        flex-direction: row;
+        gap: 133px;
+        margin-top: 32px;
+        align-items: center;
+    }
+
+    .perks{
+        align-items: baseline;
+        margin-top: 0px;
+    }
+
+    .trial:hover{
+      cursor: pointer;
+    }
+}
