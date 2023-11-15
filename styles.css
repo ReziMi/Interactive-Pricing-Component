@@ -9,12 +9,14 @@
 
 
 body {
-    height: 100vh;
-    background: url(./images/pattern-circles.svg) center calc(57px), url(./images/bg-pattern.svg);
-    background-repeat: no-repeat;
-    width: auto;
-    padding: 89px 32px 88px;
+  height: 100vh;
+  background: url(./images/pattern-circles.svg) center calc(57px), url(./images/bg-pattern.svg);
+  background-repeat: no-repeat;
+  background-size: auto, 100% auto;
+  width: auto;
+  padding: 89px 32px 88px;
 }
+
 
 .container{
     display: flex;
